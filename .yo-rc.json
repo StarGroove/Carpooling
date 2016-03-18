@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "baseName": "carpooling",
+    "packageName": "iut.montreuil",
+    "packageFolder": "iut/montreuil",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "hazelcast",
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "useSass": true,
+    "buildTool": "maven",
+    "frontendBuilder": "gulp",
+    "enableTranslation": true,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "a85eb20d2f467ed57dae6101be31905ef8c7fe97",
+    "testFrameworks": [
+      "gatling"
+    ]
+  }
+}
