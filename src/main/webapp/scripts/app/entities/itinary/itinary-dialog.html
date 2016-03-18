@@ -1,0 +1,56 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myItinaryLabel" translate="carpoolingApp.itinary.home.createOrEditLabel">Create or edit a Itinary</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="itinary.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="carpoolingApp.itinary.locationStart" for="field_locationStart">LocationStart</label>
+            <input type="text" class="form-control" name="locationStart" id="field_locationStart"
+                    ng-model="itinary.locationStart"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="carpoolingApp.itinary.locationEnd" for="field_locationEnd">LocationEnd</label>
+            <input type="text" class="form-control" name="locationEnd" id="field_locationEnd"
+                    ng-model="itinary.locationEnd"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="carpoolingApp.itinary.driver" for="field_driver">Driver</label>
+            <input type="text" class="form-control" name="driver" id="field_driver"
+                    ng-model="itinary.driver"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="carpoolingApp.itinary.car" for="field_car">Car</label>
+            <input type="text" class="form-control" name="car" id="field_car"
+                    ng-model="itinary.car"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="carpoolingApp.itinary.listStep" for="field_listStep">ListStep</label>
+            <input type="text" class="form-control" name="listStep" id="field_listStep"
+                    ng-model="itinary.listStep"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>
