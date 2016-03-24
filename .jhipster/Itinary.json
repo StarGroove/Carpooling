@@ -1,0 +1,34 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "locationStart",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "locationEnd",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "driver",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "car",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "listStep",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160318115523",
+    "dto": "mapstruct",
+    "service": "no",
+    "pagination": "no"
+}
