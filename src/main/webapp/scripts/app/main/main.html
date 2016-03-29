@@ -1,41 +1,45 @@
-<div ng-cloak>
+<div ng-cloak >
     <div class="row">
-        <div class="col-md-4">
-            <span class="hipster img-responsive img-rounded"></span>
-        </div>
-        <div class="col-md-8">
-            <h1 translate="main.title">Welcome, Java Hipster!</h1>
-            <p class="lead" translate="main.subtitle">This is your homepage</p>
 
-            <div ng-switch="isAuthenticated()">
-                <div class="alert alert-success" ng-switch-when="true" translate="main.logged.message" translate-values="{username: '{{account.login}}'}">
-                    You are logged in as user "{{account.login}}".
-                </div>
+        <div class="col-md-8 col-md-offset-2">
 
-                <div class="alert alert-warning" ng-switch-when="false" translate="global.messages.info.authenticated">
-                    If you want to <a class="alert-link" href="#/login">sign in</a>, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user" and password="user").
-                </div>
-
-                <div class="alert alert-warning" ng-switch-when="false" translate="global.messages.info.register">
-                    You don't have an account yet? <a class="alert-link" href="#/register">Register a new account</a>
-                </div>
+            <h1>Welcome, In Carpooling!</h1>
+            <p class="lead">This is First page for project my team</p>     
+            <div class="embed-responsive embed-responsive-16by9"> 
+                <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ZccI7MjZtps" allowfullscreen=""></iframe> 
             </div>
 
-            <p translate="main.question">
-                If you have any question on JHipster:
-            </p>
+            <div class="col-md-8 col-md-offset-2">
+                <form ng-show="!vm.success" name="form" role="form" novalidate="" ng-submit="vm.register()" show-validation="" class="ng-pristine ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-valid-email" aria-hidden="false">
 
-            <ul>
-                <li><a href="http://jhipster.github.io/" target="_blank" translate="main.link.homepage">JHipster homepage</a></li>
-                <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" translate="main.link.stackoverflow">JHipster on Stack Overflow</a></li>
-                <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" translate="main.link.bugtracker">JHipster bug tracker</a></li>
-                <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" translate="main.link.chat">JHipster public chat room</a></li>
-                <li><a href="https://twitter.com/java_hipster" target="_blank"  translate="main.link.contact">contact @java_hipster on Twitter</a></li>
-            </ul>
+                    <div class="form-group">
+                        <label class="control-label" for="startdestination">Start Destination</label>
+                        <input type="startdestination" class="form-control ng-pristine ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-touched" id="startdestination" name="startdestination" placeholder="Ex : Nanterre Université" ng-model="" ng-minlength="5" ng-maxlength="50" ng-pattern="/^[a-z0-9]*$/" required="" aria-invalid="true">
 
-            <p>
-             <span translate="main.like">If you like JHipster, don't forget to give us a star on </span>&nbsp;<a href="https://github.com/jhipster/generator-jhipster" target="_blank" translate="main.github">Github</a>!
-            </p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="enddestination">End Destination</label>
+                        <input type="enddestination" class="form-control ng-pristine ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-touched" id="enddestination" name="enddestination" placeholder="Ex : La Courneuve" ng-model="" ng-minlength="1" ng-maxlength="50" ng-pattern="/^[a-z0-9]*$/" required="" aria-invalid="true">
+                    </div>      
+
+                    <button type="submit" class="btn btn-primary" >Search</button>
+                </form>
+                <p>
+                    If you have any question on Carpooling:
+                </p>
+
+                <ul>
+                    <li><a href="https://github.com/StarGroove/Carpooling" target="_blank">Git Carpooling</a></li>
+                    <li><a href="https://github.com/CallixteBailly/AngularsTest" target="_blank">Example for AngularJS</a></li>
+                    <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank">JHipster bug tracker</a></li>
+                    <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank">JHipster public chat room</a></li>
+                    <li><a href="https://twitter.com/java_hipster" target="_blank" >follow @java_hipster on Twitter</a></li>
+                </ul>                
+                <p>
+                    <span>If you like Carpooling, don't forget to give us a star on </span>&nbsp;<a href="https://github.com/StarGroove/Carpooling" target="_blank">Github</a>!
+                </p>
+            </div>
+
         </div>
     </div>
 </div>

@@ -62,7 +62,8 @@ dfn {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+  color: white; }
 
 mark {
   background: #ff0;
@@ -1059,11 +1060,7 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  /*
-  background-color: #fff;
-  -------------------------------------*/
-  background-image:url("../images/image_de_fond.png");
-}
+  background-color: #fff; }
 
 input,
 button,
@@ -1198,7 +1195,8 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 36px; }
+  font-size: 36px;
+  color: white; }
 
 h2, .h2 {
   font-size: 30px; }
@@ -1216,7 +1214,8 @@ h6, .h6 {
   font-size: 12px; }
 
 p {
-  margin: 0 0 10px; }
+  margin: 0 0 10px;
+  color:  white; }
 
 .lead {
   margin-bottom: 20px;
@@ -2268,8 +2267,9 @@ legend {
 label {
   display: inline-block;
   max-width: 100%;
-  margin-bottom: 5px;
-  font-weight: bold; }
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: white; }
 
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -5828,10 +5828,7 @@ button.close {
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333; 
-  background-image:url("../images/image_de_fond.png");
-  background-size: cover;
-}
+  color: #333; }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important; }
@@ -5844,7 +5841,7 @@ body {
   left: 0;
   border: 0;
   z-index: 1000;
-  /*background-image: url("../images/development_ribbon.png");*/
+  background-image: url("../images/development_ribbon.png");
   background-position: center center;
   background-repeat: no-repeat; }
 
@@ -5883,7 +5880,12 @@ body {
   height: 497px;
   background: url("../images/hipster.png") no-repeat center top;
   background-size: contain; }
-
+.Background {
+    width: 1080px;
+    height: 980px;
+    background: url("../images/image_de_fond.png") no-repeat center top;
+    background-size: cover;
+}
 .pad {
   padding: 10px; }
 
